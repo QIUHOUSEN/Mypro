@@ -1,0 +1,752 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    /*background-color: black;*/
+    font-family:"微软雅黑";
+    /*height: 1000px;*/
+}
+
+*{margin:0;padding:0;}
+/*html, body{height:100%;}*/
+
+.imagenav{
+    width: 100%;
+    height: 250px;
+    background-position:50% 0%;
+    background: url("../images/headbanner.jpg");
+    background-size: contain;
+    background-attachment:fixed;
+    z-index: -1;/*===================================层级标签*/
+   /* position: relative;*/
+    /*bottom: 0px;*/
+}
+
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    float: left;
+    line-height: 50px;
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    z-index: 3;/*===================================层级标签*/
+}
+
+.nav>div{
+    position: relative;
+    float: left;
+    color:rgba(255,255,255,0.8);
+    /*margin-left: 70px;*/
+    font-size:14px;
+    width: 30px;
+    line-height: 50px;
+    margin-right: 70px;
+    cursor: pointer;
+    -moz-transition: margin 0.5s linear;
+    -webkit-transition:margin 0.5s linear;
+    z-index: 4;/*===================================层级标签*/
+}
+
+.nav>div:hover:not(.logandreg){
+    color:rgba(255,255,255,0.5);
+}
+
+
+.nav div:first-child{
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.nav div:nth-child(2){
+    margin-left: 90px;
+}
+
+.nav div:nth-child(10){
+    width: 150px;
+    /*background-color: red;*/
+    float: right;
+    margin: 0px;
+    margin-right: 40px;
+    margin-top: 10px;
+    z-index: 3;
+}
+
+.nav div:nth-child(10) div{
+    float: right;
+    width: 55px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px;
+    margin-right: 1px;
+    background-color: rgba(225,225,255,0.3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav div:nth-child(10) div:hover{
+    color:rgba(255,255,255,0.5);
+}
+
+
+#search{
+    width: 0px;
+    z-index: 4;
+    -webkit-transition:width 0.3s linear;
+
+}
+
+
+#search span{
+    z-index: 10;
+    position: absolute;
+    left: 200px;
+    top: 18px;
+    z-index: 4;
+}
+
+#search input{
+    width: 0px;
+    position: absolute;
+    top: 13px;
+    opacity: 0;
+    right: -220px;
+    outline:none;
+    -webkit-transition:width 0.3s linear;
+    border: 0px;
+    z-index: 4;
+}
+
+#search1{
+    position: absolute;
+    width: 150px;
+    height:30px;
+    right: 90px;
+    top: 10px;
+    color:rgba(255,255,255,.8);
+    z-index:10;
+    border-radius: 5px;
+    background-color:white;
+    -webkit-transition:width 0.3s linear;
+}
+
+#search1 input{
+    position: absolute;
+    top: 0px;
+    border: 0px;
+    width: 130px;
+    height:30px;
+    border-radius: 5px;
+    outline:none;
+    right: 0px;
+    opacity: 1;
+    -webkit-transition:width 0.3s linear;
+    z-index: 4;
+}
+
+#search1 span{
+    z-index: 4;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    color:rgba(0,0,0,.8);
+    -webkit-transition:margin 0.3s linear;
+
+}
+
+#submenu{
+    padding: 0px;
+    position: absolute;
+    width: 0px;/*正常100,60*/
+    height:0px;
+    list-style:none;
+    font-size:12px;
+    color:rgba(255,255,255,.8);
+    background-color:rgba(0,0,0,0.5);
+    left: -30px;
+    top: 38px;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    z-index: 2;/*===================================层级标签*/
+}
+
+#submenu li{
+    margin: 0 auto;
+    position: relative;
+    list-style:none;
+    font-size:12px;
+    width: 100px;
+    line-height: 0px;
+    /*height: 0px;*/
+    /*background-color: red;*/
+    margin-top: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    z-index: 2;/*===================================层级标签*/
+    /*color: white;*/
+}
+
+.nav>div:nth-of-type(8):hover{
+    height: 120px;
+    z-index: 2;/*===================================层级标签*/
+}
+
+#more:hover ul{
+    opacity: 1;
+    z-index: 2;/*===================================层级标签*/
+}
+#more:hover ul li{
+    width: 100px;
+    line-height: 30px;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 2;/*===================================层级标签*/
+}
+
+#more ul li:hover{
+    color:#00A398;
+    background-color:rgba(20,90,20,0.5);
+    z-index: 2;/*===================================层级标签*/
+}
+
+.centerimg{
+    position: fixed;
+    top: 30px;
+    width: 200px;
+    /*height: 70px;*/
+    /*background-color: blue;*/
+    margin: 50px auto;
+    z-index: 0;
+    left: 600px;
+}
+
+.centerimg img{
+    display: block;
+    width: 80px;
+    margin: 0px auto;
+}
+
+.centerimg p{
+    font-size:14px;
+    color: white;
+    margin: 5px auto;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.logreg{
+    position: fixed;
+    width: 400px;
+    /*height: 500px;*//*临时去掉高度，到时候好动态显示*/
+
+    /*background-color: white;*/
+    left: 500px;
+    /*top: 100px;这是正常显示位置的值*/
+    top: -1000px;
+    overflow:hidden;
+    /*border: 1px solid black;*/
+    z-index: 30;
+    -webkit-transition: all 0.5s linear;
+
+}
+
+.login, .regin{
+    position: absolute;
+    width: 400px;
+    /*height: 450px;*/
+    font-size:12px;
+    /*border: 1px solid black;*/
+    z-index: 20;
+    background-color: white;
+}
+
+.regin{
+    /*display: none;*/
+    z-index: 21;
+    display: none;
+}
+.login{
+    display: none;
+}
+
+.closebtn{
+    position: relative;
+    margin-left: 270px;
+    color: white;
+    background-color:#444;
+    text-align:center;
+    font-size:15px;
+    width: 50px;
+    height: 55px;
+    border-radius: 0 0 50px 50px;
+
+}
+
+.closebtn span{
+    line-height: 50px;
+    -webkit-transition:all 0.3s linear;
+    -webkit-transform-style: preserve-3d;
+    cursor: pointer;
+}
+.closebtn span:hover{
+    color: #ffab99;
+    -webkit-transform:rotateY(180deg);
+    cursor: pointer;
+}
+
+.login-regin-switch{
+    position: relative;
+    left: 47px;
+    width: 70px;
+    line-height: 30px;
+    /*background-color: red;*/
+    text-align: center;
+    color:#999;
+    cursor: pointer;
+}
+.login-regin-switch span{
+    color: #ea4c89;
+    cursor: pointer;
+}
+.login-regin-switch label{
+    color: #ea4c89;
+    cursor: pointer;
+}
+
+.login h1, .regin h1{
+    font-size:18px;
+    font-weight:normal;
+    margin-left: 50px;
+}
+
+.signform{
+    width:400px;
+    color:#ea4c89;
+    /*background-color: yellow;*/
+    position: relative;
+    z-index: 20;
+
+}
+.signform span:nth-of-type(1){
+    position: relative;
+    font-size:20px;
+    top:5px;
+    left:320px;
+    z-index: 20;
+    /*display: inline;*/
+
+}
+.signform span:nth-of-type(2){
+    position: relative;
+    font-size:20px;
+    top:60px;
+    left:-35px;
+    z-index: 20;
+
+}
+
+.signform input[type="text"], .signform input[type="password"]{
+
+    width:300px;
+    height:40px;
+    z-index: 20;
+}
+.signform input[type="text"]{
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+.signform input[type="password"]{
+    margin-left: 49px;
+    margin-top: 10px;
+}
+
+.checkboxa{
+    position: relative;
+    width: 300px;
+    line-height: 40px;
+    /*background-color: #6bff7d;*/
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.checkboxa input{
+    position: relative;
+    top: 2px;
+}
+.checkboxa a{
+    position: relative;
+    left: 140px;
+    text-decoration: none;
+    color:#ea4c89;
+}
+.signform input[type="button"]{
+    width: 300px;
+    height: 40px;
+    margin-left: 50px;
+    font-family:"微软雅黑";
+    outline:0px;
+    font-size:15px;
+    background-color:#00c3b6;
+    border:0px;
+    color:white;
+    cursor:pointer;
+}
+.signform input[type="button"]:hover{
+    background-color: #1c8bff;
+}
+
+hr{
+    margin-top: 30px;
+}
+.qqlogin{
+    height: 70px;
+    width: 300px;
+    /*background-color: #97ff85;*/
+    text-align: center;
+    margin: 10px auto;
+
+}
+.qqlogin p{
+    font-family:"微软雅黑";
+    color:#333;
+}
+.qqlogin div{
+    width: 100px;
+    height: 25px;
+    background-color: #4e93ff;
+    margin: 0px auto;
+    padding-top: 8px;
+    text-align: center;
+    cursor:pointer;
+}
+
+#reguseraddr{
+    position: relative;
+    left: 19px;
+    top: 3px;
+}
+#envelope{
+    position: relative;
+    left: -40px;
+    top:55px;
+    z-index: 21;
+}
+#lockone, #locktwo{
+    position: relative;
+    font-size:20px;
+    top: 50px;
+
+}
+#lockone{
+    left: -17px;
+    top: 60px;
+}
+#locktwo{
+    left: -37px;
+    top: 60px;
+}
+.signform1 input[type="button"]{
+    position: relative;
+    top:20px;
+}
+.qqlogin1{
+    /*background-color: red;*/
+    margin-top: -15px;
+}
+.qqlogin1 p{
+    position: relative;
+    top: 20px;
+}
+.qqlogin1 div{
+    position: relative;
+    top: 15px;
+}
+
+hr{
+    position: relative;
+    top: 10px;
+}
+
+#cover{
+    position:fixed;
+    -webkit-transition:all 0.2s linear;
+    top: 0px;
+    left: 0px;
+    /*width: 100%;
+    height:2796px;
+    background-color: #ba7e70;
+    top: 0px;
+    left: 0px;
+    z-index: 29;*/
+}
+
+#backtotop{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.7);
+    bottom: 50px;
+    right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor:pointer;
+    display: none;
+    z-index: 100;
+}
+#backtotop:hover{
+    background-color: #00c3b6;
+}
+
+#backtotop span{
+    cursor:pointer;
+    line-height:40px;
+    font-size:20px;
+    color:#ccc;
+    text-align: center;
+}
+
+
+
+/*装载中间内容和页头的那个大的div*/
+/*.topAndContent{
+    width: 100%;
+    !*border: 1px solid red;*!
+    min-height:100%;!*这是做的不同浏览器的兼容性，都是表示最小高度，只是写法不同而已
+    当div内的内容不够最小高度高的时候，就以最小高度显示div，不够的内容空白补上，超出的内容
+    将它撑开，而最大高度刚好相反，超出部分内容被截掉，内容不够高度的时候，就iv就只有内容的高度*!
+    _height: 100%;
+
+    !*position: absolute;
+    top: 50px;*!
+    !*bottom: -400px;*!
+    !*height: 100%;*!
+    background-color: #ba57af;
+    margin-bottom: -250px;
+
+}*/
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+
+#content{
+    width: 100%;
+    /*min-height: 100%;
+    _height: 100%;*/
+    /*height: 100px;*/
+    background-color: #88ba3e;
+    /*margin-top: 50px;*/
+
+}
+
+/*中间内容部分*/
+#neirong{
+    width: 100%;
+    height: 180px;
+    background-color: yellow;
+    margin-top: 0px;
+
+}
+
+
+
+
+
+
+/**页脚部分Footer*/
+.footer{
+    width:100%;
+    height:250px;
+
+    background-color:#222;
+    color:#666;
+    font-size:12px;
+    /*position: relative;
+    top: 0px;*/
+
+}
+
+.footer-left{
+    width:433px;
+    margin-left:50px;
+    margin-right:70px;
+    float:left;
+    margin-top: 40px;
+}
+
+.footer-left p{
+
+    line-height:20px;
+    letter-spacing:1px;
+}
+
+.footer-col{
+    float:left;
+    margin-right:70px;
+    margin-top: 40px;
+}
+
+.footer h5{
+    color:#ccc;
+    font-size:15px;
+    font-weight:normal;
+    margin-bottom:10px;
+}
+
+.footer-col ul{
+    margin:0px;
+    padding:0px;
+}
+
+.footer-col ul li{
+    height:25px;
+    list-style:none;
+    cursor:pointer;
+}
+
+.footer-col ul li:hover{
+    text-decoration:underline;
+    color:#ddd;
+}
+
+.footercopyright{
+    width:1280px;
+    height:50px;
+    float:left;
+    margin-left:50px;
+    border-top:1px solid rgba(255,255,2555,.065);
+    /*overflow: visible;*/
+    /*background-color: yellowgreen;*/
+}
+
+.footercopyright p{
+    margin-top: 10px;
+}
+
+.footer-col ul li input[type="text"]{
+    width:165px;
+    height:26px;
+    background-color:#222;
+    border:1px solid #333;
+    outline:0px;
+    color:#666;
+    margin-right:5px;
+}
+
+.footer-col ul li input[type="button"]{
+    width:48px;
+    height:30px;
+    line-height:30px;
+    background-color:#00c3b6;
+    color:#ccc;
+    border-radius:3px;
+    border:0px;
+    outline:0px;
+    cursor:pointer;
+}
+
+.footer-col ul li input[type="button"]:hover{
+    text-decoration:none;
+    color:white;
+}
+
+.footer-share{
+    margin-top:20px;
+}
+
+.footer-share>span{
+    display:inline-block;
+    margin-right:5px;
+    width:30px;
+    height:30px;
+    border-radius:3px;
+    background-color:#1b1b1b;
+    line-height:30px;
+    text-align:center;
+    font-size:15px;
+    color:rgba(255,255,255,0.7);
+    cursor:pointer;
+    -webkit-transition:all 0.2s ease-in;
+}
+
+.footer-share span:nth-child(1):hover{
+    background-color:#79ac21;
+}
+
+.footer-share span:nth-child(2):hover{
+    background-color:#ff664e;
+}
+
+.footer-share span:nth-child(3):hover{
+    background-color:#e05fef;
+}
+
+.footer-share span:nth-child(4):hover{
+    background-color:#00c3f4;
+}
+
+.footer-share span:nth-child(5):hover{
+    background-color:#f39c12;
+}
+
+#myname{
+    float:right;
+    margin-top:-20px;
+    cursor:pointer;
+    margin-right: 60px;
+    -webkit-transition:all 0.8s linear;
+}
+
+#myname:hover{
+    color:#ea4c89
+}
+
+#oye{
+    position:relative;
+    color:#333;
+    font-weight:bold;
+    left:1100px;
+    width:110px;
+    height:20px;
+    top:-55px;
+    padding-left:10px;
+    text-align:center;
+    background-color:#ea4c89;
+    border-radius:20px;
+    opacity:0;
+    -webkit-transition:all 0.5s ease-out;
+    display: block;
+}
+
+#oye:after{
+    content:"\25BC";
+    position:relative;
+    top: 12px;
+    font-size:14px;
+    color:#ea4c89;
+    /*position: absolute;
+    left: 95px;
+    width:80px;
+    height:80px;
+    z-index: 50;*/
+    /*content:"\25BC";
+    position:relative;
+    width: 400px;
+    height: 300px;
+    top:10px;
+    font-size:14px;
+    color:#ea4c89;*/
+}
+
+#myname:hover+#oye{
+    opacity:1;
+    z-index:10;
+    width:100px;
+    height:20px;
+    line-height: 20px;
+    /*background-color: yellow;*/
+}

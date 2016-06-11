@@ -1,0 +1,1118 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    /*background-color: black;*/
+    font-family:"微软雅黑";
+    /*height: 1000px;*/
+}
+*{margin:0;padding:0;}
+/*html, body{height:100%;}*/
+
+.imagenav{
+    width: 100%;
+    height: 250px;
+    background-position:50% 0%;
+    background: url("../images/headbanner.jpg");
+    background-size: contain;
+    background-attachment:fixed;
+    z-index: -1;//===================================层级标签
+}
+
+.nav:before,.nav:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.nav{
+    width: 100%;
+    /*height: 50px;*/
+    /*background-color:rgba(181, 233, 181, 0.87);*/
+    float: left;
+    height: 50px;
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    z-index: 3;/*===================================层级标签*/
+    /*display: flex;*/
+    background-color: rgba(50,50,50,1);
+}
+
+.nav>div[class^="eights"]{
+    /*flex: 1 1 100px;*/
+    width: 6.5%;
+    /*background-color: rgba(217, 145, 233, 0.87);*/
+    background-color: rgba(50,50,50,0.9);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    float: left;
+    line-height: 50px;
+    margin-right: 0.6%;
+
+}
+
+
+.nav>div[class^="eights"]:hover{
+    color: rgba(132,132,132,0.9);
+}
+
+
+.nav>div:nth-of-type(1){
+    /*flex: 2.5 1 250px;*/
+    width: 250px;
+    /*background-color: rgba(119, 208, 233, 0.87);*/
+    height: 50px;
+    float: left;
+    background-color: rgba(50,50,50,0.9);
+    /*margin-right: 2%;*/
+}
+.nav>div:nth-of-type(1) img{
+    margin-left: 20%;
+}
+
+.nav>div:nth-of-type(9){
+    /*flex: 4.16 1 416px;*/
+    width: 28%;
+    /*background-color: blue;*/
+    background-color: rgba(50,50,50,0.9);
+    position: relative;
+    line-height: 50px;
+    color: white;
+    margin-left: 72%;
+    height: 50px;
+
+}
+.nav>div:nth-of-type(9) #search{
+    right: 48%;
+    /*width: 58%;*/
+    /*width: 220px;*/
+    width: 0px;
+    line-height: 35px;
+    position: absolute;
+    top: 7px;
+    background-color: rgba(50,50,50,0.9);
+    border: none;
+    /*visibility: hidden;*/
+    border-radius: 4px;
+    z-index: 1;
+}
+#search span{
+    /*float: right;*/
+    margin-left: 80%;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    z-index: 100;
+    color: rgba(127,127,127,0.9)
+}
+
+.nav>div:nth-of-type(9) #search span:hover{
+    color: rgba(132,132,132,1);
+}
+
+#search .searchInput{
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 78%;
+    height: 35px;
+    transition: all 0.2s linear;
+    visibility: hidden;
+    color: black;
+
+
+}
+
+.nav>div:nth-of-type(9) .logandreg{
+    float: left;
+    width: 116px;
+    line-height: 50px;
+    /*background-color: rgba(233, 109, 222, 0.87);*/
+    position: absolute;
+    top: 7px;
+    right: 4%;
+    border-radius: 4px;
+
+}
+
+.nav>div:nth-of-type(9) .logandreg>div{
+    float: left;
+    width: 57px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 1px;
+    background-color: rgba(91,91,91,0.9);
+    /*background-color: red;*/
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav>div:nth-of-type(9) .logandreg>div:hover{
+    color: rgba(132,132,132,0.9);
+}
+
+#more{
+    height: 50px;
+    /*height: 120px;*/
+    width: 100px;
+    overflow: hidden;
+
+}
+#more:hover{
+    height: 120px;
+    transition: height 0.2s linear;
+
+}
+
+#submenu li{
+    line-height: 35px;
+    list-style-type: none;
+
+}
+#submenu li:hover{
+    background-color: rgba(71,71,71,0.9);
+    color: #00c3f4;
+}
+
+
+.centerimg{
+    position: fixed;
+    top: 30px;
+    width: 200px;
+    /*height: 70px;*/
+    /*background-color: blue;*/
+    margin: 50px auto;
+    z-index: 0;
+    left: 600px;
+}
+
+.centerimg img{
+    display: block;
+    width: 80px;
+    margin: 0px auto;
+}
+
+.centerimg p{
+    font-size:14px;
+    color: white;
+    margin: 5px auto;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.logreg{
+    position: fixed;
+    width: 400px;
+    /*height: 500px;*//*临时去掉高度，到时候好动态显示*/
+    /*background-color: white;*/
+    left: 500px;
+    /*top: 100px;这是正常显示位置的值*/
+    top: -1000px;
+    overflow:hidden;
+    /*border: 1px solid black;*/
+    z-index: 30;
+    -webkit-transition: all 0.5s linear;
+
+}
+
+.login, .regin{
+    position: absolute;
+    width: 400px;
+    /*height: 450px;*/
+    font-size:12px;
+    /*border: 1px solid black;*/
+    z-index: 20;
+    background-color: white;
+}
+
+.regin{
+    /*display: none;*/
+    z-index: 21;
+    display: none;
+}
+.login{
+    display: none;
+}
+
+.closebtn{
+    position: relative;
+    margin-left: 270px;
+    color: white;
+    background-color:#444;
+    text-align:center;
+    font-size:15px;
+    width: 50px;
+    height: 55px;
+    border-radius: 0 0 50px 50px;
+
+}
+
+.closebtn span{
+    line-height: 50px;
+    -webkit-transition:all 0.3s linear;
+    -webkit-transform-style: preserve-3d;
+    cursor: pointer;
+}
+.closebtn span:hover{
+    color: #ffab99;
+    -webkit-transform:rotateY(180deg);
+    cursor: pointer;
+}
+
+.login-regin-switch{
+    position: relative;
+    left: 47px;
+    width: 70px;
+    line-height: 30px;
+    /*background-color: red;*/
+    text-align: center;
+    color:#999;
+    cursor: pointer;
+}
+.login-regin-switch span{
+    color: #ea4c89;
+    cursor: pointer;
+}
+.login-regin-switch label{
+    color: #ea4c89;
+    cursor: pointer;
+}
+
+.login h1, .regin h1{
+    font-size:18px;
+    font-weight:normal;
+    margin-left: 50px;
+}
+
+.signform{
+    width:400px;
+    color:#ea4c89;
+    /*background-color: yellow;*/
+    position: relative;
+    z-index: 20;
+
+}
+.signform span:nth-of-type(1){
+    position: relative;
+    font-size:20px;
+    top:5px;
+    left:320px;
+    z-index: 20;
+    /*display: inline;*/
+
+}
+.signform span:nth-of-type(2){
+    position: relative;
+    font-size:20px;
+    top:60px;
+    left:-35px;
+    z-index: 20;
+
+}
+
+.signform input[type="text"], .signform input[type="password"]{
+
+    width:300px;
+    height:40px;
+    z-index: 20;
+}
+.signform input[type="text"]{
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+.signform input[type="password"]{
+    margin-left: 49px;
+    margin-top: 10px;
+}
+
+.checkboxa{
+    position: relative;
+    width: 300px;
+    line-height: 40px;
+    /*background-color: #6bff7d;*/
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.checkboxa input{
+    position: relative;
+    top: 2px;
+}
+.checkboxa a{
+    position: relative;
+    left: 140px;
+    text-decoration: none;
+    color:#ea4c89;
+}
+.signform input[type="button"]{
+    width: 300px;
+    height: 40px;
+    margin-left: 50px;
+    font-family:"微软雅黑";
+    outline:0px;
+    font-size:15px;
+    background-color:#00c3b6;
+    border:0px;
+    color:white;
+    cursor:pointer;
+}
+.signform input[type="button"]:hover{
+    background-color: #1c8bff;
+}
+
+hr{
+    margin-top: 30px;
+}
+.qqlogin{
+    height: 80px;
+    width: 300px;
+    /*background-color: #97ff85;*/
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+.qqlogin p{
+    font-family:"微软雅黑";
+    color:#333;
+}
+.qqlogin div{
+    width: 100px;
+    height: 25px;
+    background-color: #4e93ff;
+    margin: 0px auto;
+    padding-top: 8px;
+    text-align: center;
+    cursor:pointer;
+    margin-top: 20px;
+}
+
+#reguseraddr{
+    position: relative;
+    left: 19px;
+    top: 3px;
+}
+#envelope{
+    position: relative;
+    left: -40px;
+    top:55px;
+    z-index: 21;
+}
+#lockone, #locktwo{
+    position: relative;
+    font-size:20px;
+    top: 50px;
+
+}
+#lockone{
+    left: -17px;
+    top: 60px;
+}
+#locktwo{
+    left: -37px;
+    top: 60px;
+}
+.signform1 input[type="button"]{
+    position: relative;
+    top:20px;
+}
+.qqlogin1{
+    /*background-color: red;*/
+    margin-top: 15px;
+}
+.qqlogin1 p{
+    position: relative;
+    top: 20px;
+}
+.qqlogin1 div{
+    position: relative;
+    top: 15px;
+}
+
+hr{
+    position: relative;
+    top: 10px;
+}
+
+#cover{
+    position:fixed;
+    -webkit-transition:all 0.2s linear;
+    top: 0px;
+    left: 0px;
+    /*width: 100%;
+    height:2796px;
+    background-color: #ba7e70;
+    top: 0px;
+    left: 0px;
+    z-index: 29;*/
+}
+
+#backtotop{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.7);
+    bottom: 50px;
+    right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor:pointer;
+    display: none;
+    z-index: 100;
+}
+#backtotop:hover{
+    background-color: #00c3b6;
+}
+
+#backtotop span{
+    cursor:pointer;
+    line-height:40px;
+    font-size:20px;
+    color:#ccc;
+    text-align: center;
+}
+
+
+/*装载中间内容和页头的那个大的div*/
+/*.topAndContent{
+    width: 100%;
+    !*border: 1px solid red;*!
+    min-height:100%;!*这是做的不同浏览器的兼容性，都是表示最小高度，只是写法不同而已
+    当div内的内容不够最小高度高的时候，就以最小高度显示div，不够的内容空白补上，超出的内容
+    将它撑开，而最大高度刚好相反，超出部分内容被截掉，内容不够高度的时候，就iv就只有内容的高度*!
+    _height: 100%;
+
+    !*position: absolute;
+    top: 50px;*!
+    !*bottom: -400px;*!
+    !*height: 100%;*!
+    !*background-color: #ba57af;*!
+    margin-bottom: -250px;
+
+}*/
+
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/*中间内容部分*/
+#content{
+    width: 100%;
+    /*min-height: 100%;
+    _height: 100%;*/
+    /*height: 700px;*/
+    /*height: 50%;*/
+    /*background-color: rgba(230, 100, 126, 0.29);*/
+    /*height: 360px;*/
+    background-color: rgba(241,241,241,1);
+    /*background-color: #00A398;*/
+    margin-top: 50px;
+    /*height: 400px;*/
+    position: relative;
+
+}
+
+@media (min-width: 1000px){
+    .rows{
+        /*height: 500px;*/
+        display: flex;
+        flex-direction: row;
+
+    }
+    .colone{
+       /* background-color: red;*/
+        height: 100%;
+
+
+    }
+    .coltwo{
+        background-color: blue;
+        height: 100%;
+
+
+    }
+
+
+}
+.rows{
+    background-color: rgba(241,241,241,1);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.leftul{
+    margin: 0px auto;
+    background-color: greenyellow;
+
+}
+.leftlis{
+    list-style-type: none;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(251,251,251,1);
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.coltwo{
+    background-color: rgba(251,251,251,1);
+    text-align: center;
+    padding-bottom: 50px;
+    position: relative;
+    /*background-color: rgba(121, 255, 101, 0.93);*/
+
+}
+
+.coltwo .div1{
+    visibility: visible;
+    overflow: hidden;
+    /*background-color: red;*/
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.coltwo .div2{
+    visibility: hidden;
+    overflow: hidden;
+    /*background-color: red;*/
+
+    /*height: 0px;*/
+
+}
+.coltwo .div3{
+    visibility: hidden;
+    overflow: hidden;
+    /*background-color: red;*/
+
+    /*height: 0px;*/
+}
+.coltwo .div4{
+    visibility: hidden;
+    overflow: hidden;
+    /*background-color: red;*/
+
+    /*height: 0px;*/
+}
+.coltwo .div5{
+    visibility: hidden;
+    overflow: hidden;
+    /*background-color: red;*/
+    /*height: 0px;*/
+
+}
+.coltwo .div6{
+    visibility: hidden;
+    overflow: hidden;
+    /*background-color: red;*/
+    /*height: 0px;*/
+
+}
+
+.div4 ul{
+    text-align: left;
+    padding-left: 20px;
+    /*background-color: red;*/
+    width: 100%;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ccc;
+}
+.div4 ul div{
+    line-height: 35px;
+}
+.div4 ul li{
+    list-style-type: none;
+    float: left;
+    /*background-color: blue;*/
+    margin-right: 20px;
+    padding-bottom: 30px;
+}
+
+#div5>div p{
+    text-align: left;
+    /*background-color: red;*/
+    line-height: 20px;
+    padding-top: 5px;
+
+}
+#div5>div p:nth-of-type(1){
+    font-weight: bold;
+}
+#div5>div{
+    margin-bottom: 40px;
+}
+
+
+.lisbody{
+    text-align: left;
+
+}
+
+.showlog{
+    color: rgba(0,195,182,1);
+    visibility: hidden;
+    cursor: pointer;
+
+}
+.allul:hover .showlog{
+    visibility: visible;
+}
+
+#div6>p{
+    text-align: left;
+    /*background-color: red;*/
+    margin-top: 20px;
+    line-height: 5px;
+    margin-bottom: -10px;
+}
+.div6>ul:nth-of-type(1)>li{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 30px;
+    float: left;
+    margin-right: 20px;
+    color: rgba(153,119,153,1);
+    cursor: pointer;
+    line-height: 30px;
+}
+.div6>ul:nth-of-type(1)>li:hover{
+    color:rgba(0,195,182,1);
+}
+
+.uls{
+    text-align: left;
+    margin-top: 140px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+
+}
+
+
+
+
+.coltwo>div:not(.div1){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*visibility: visible;*/
+
+}
+.coltwo>div:not(.div1) h3{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.coltwo>div:not(.div1) p{
+    padding-left: 20px;
+    padding-top: 15px;
+
+}
+
+
+.coltwo  p{
+    line-height: 30px;
+
+}
+
+.coltwo h3{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-align: left;
+
+}
+
+
+
+
+.allcontainer{
+    /*height: 400px;*/
+    background-color: #00A398;
+
+}
+
+
+@media (max-width: 1000px){
+    .colone{
+        /*background-color: red;*/
+        height: 30%;
+        order: 2;
+    }
+    .coltwo{
+        /*background-color: blue;*/
+        height: 70%;
+        order: 1;
+    }
+
+    .rows{
+        /*height: 500px;*/
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bars{
+    position: absolute;
+    top: 15px;
+    left: 3%;
+    color: white;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#close{
+    position: absolute;
+    top: 15px;
+    left: 3%;
+    color: white;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#jueweilogo{
+    position: absolute;
+    visibility: hidden;
+    left: 47%;
+    cursor: pointer;
+}
+
+#users{
+    position: absolute;
+    top: 15px;
+    right:3%;
+    color: white;
+    z-index: 100;
+    visibility: hidden;
+    cursor: pointer;
+
+}
+
+@media (min-width: 1000px) {/*当大于1000px的时候，就不换行*/
+    #bottomContenTwo{
+        flex-flow: row nowrap;
+    }
+
+}
+
+@media (max-width: 1000px) {/*当小于1000px的时候，就换行*/
+    #bottomContenTwo{
+        flex-flow: row wrap;
+    }
+    #bottomContenTwo li:nth-of-type(1){
+        width: 100%;
+    }
+    #bottomContenTwo li:nth-of-type(2){
+        width: 100%;
+        margin-left: -20px;
+        /*height: 400px;*/
+    }
+    .rightContent{
+        width: 98%;
+    }
+
+
+    /*媒体查询，判断导航栏排版*/
+    .eights,.logandreg{
+        opacity: 0;
+        visibility: hidden;
+        background-color: rgba(133,133,133,0.8);
+
+    }
+    #search{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav{
+        background-color: rgba(3,3,3,0.8);
+    }
+
+    #bars,#jueweilogo,#users{
+        visibility: visible;
+    }
+
+    #footer{
+        width: 100%;
+        /*height: 300px;*/
+        height: 250px;
+        background-color: rgba(34,34,34,1);
+        overflow: hidden;
+        position: relative;
+    }
+    /*.footer-left,.footer-col{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .footercopyright p{
+        position: absolute;
+        !*margin-top: -32%;*!
+
+    }*/
+
+
+
+}
+
+/*当屏幕缩小到620的时候，就要左边那个内容换行*/
+@media (max-width: 620px){
+    .leftContenBox{
+        flex-flow: row wrap;
+
+    }
+    .leftContenBox>img,.leftContenBox>div{
+        width: 100%;
+        display: block;
+        height: 180px;
+
+    }
+    .leftContenBox>div{
+        display: block;
+        /*background-color: red;*/
+        width: 100%;
+        position: relative;
+
+    }
+    .leftContent>div {
+        position: relative;
+        margin-bottom: 140px;
+    }
+    .leftContent:before,.leftContent:after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+
+
+
+
+}
+/*@media (min-width: 620px){
+    .leftContenBox{
+        flex-flow: row nowrap;
+
+    }
+}*/
+
+
+
+/**页脚部分Footer*/
+.footer{
+    width:100%;
+    height:250px;
+    /*height: 30%;*/
+    background-color:#222;
+    color:#666;
+    font-size:12px;
+    /*position: relative;
+    top: 0px;*/
+
+}
+
+.footer-left{
+    width:30%;
+    margin-left:5%;
+    margin-right:5%;
+    float:left;
+    margin-top: 3%;
+    /*background-color: rgba(85, 233, 78, 0.87);*/
+}
+
+.footer-left p{
+
+    line-height:20px;
+    letter-spacing:1px;
+}
+
+.footer-col{
+    float:left;
+    margin-right:5%;
+    margin-top: 3%;
+}
+
+.footer-left h5,.footer-col h5{
+    color:#ccc;
+    font-size:15px;
+    font-weight:normal;
+    margin-bottom:3%;
+}
+
+.footer-col ul{
+    margin:0px;
+    padding:0px;
+}
+
+.footer-col ul li{
+    height:25px;
+    list-style:none;
+    cursor:pointer;
+}
+
+.footer-col ul li:hover{
+    text-decoration:underline;
+    color:#ddd;
+}
+
+.footercopyright{
+    width:90%;
+    height:15%;
+    float:left;
+    border-top:1px solid rgba(255,255,2555,.065);
+    /*overflow: visible;*/
+    /*background-color: yellowgreen;*/
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+
+.footercopyright p{
+    margin-bottom: 1%;
+}
+
+.footer-col ul li input[type="text"]{
+    width:68%;
+    height:26px;
+    background-color:#222;
+    border:1px solid #333;
+    outline:0px;
+    color:#666;
+    margin-right:1%;
+}
+
+.footer-col ul li input[type="button"]{
+    width:48px;
+    height:30px;
+    line-height:30px;
+    background-color:#00c3b6;
+    color:#ccc;
+    border-radius:3px;
+    border:0px;
+    outline:0px;
+    cursor:pointer;
+}
+
+.footer-col ul li input[type="button"]:hover{
+    text-decoration:none;
+    color:white;
+}
+
+.footer-share{
+    margin-top:20px;
+}
+
+.footer-share>span{
+    display:inline-block;
+    margin-right:3%;
+    width:30px;
+    height:30px;
+    border-radius:3px;
+    background-color:#1b1b1b;
+    line-height:30px;
+    text-align:center;
+    font-size:15px;
+    color:rgba(255,255,255,0.7);
+    cursor:pointer;
+    -webkit-transition:all 0.2s ease-in;
+}
+
+.footer-share span:nth-child(1):hover{
+    background-color:#79ac21;
+}
+
+.footer-share span:nth-child(2):hover{
+    background-color:#ff664e;
+}
+
+.footer-share span:nth-child(3):hover{
+    background-color:#e05fef;
+}
+
+.footer-share span:nth-child(4):hover{
+    background-color:#00c3f4;
+}
+
+.footer-share span:nth-child(5):hover{
+    background-color:#f39c12;
+}
+
+#myname{
+    float:right;
+    margin-top:-20px;
+    cursor:pointer;
+    margin-right: 60px;
+    -webkit-transition:all 0.8s linear;
+}
+
+#myname:hover{
+    color:#ea4c89
+}
+
+#oye{
+    position:relative;
+    color:#333;
+    font-weight:bold;
+    left:83%;
+    width:110px;
+    height:20px;
+    top:-55px;
+    padding-left:10px;
+    text-align:center;
+    background-color:#ea4c89;
+    border-radius:20px;
+    opacity:0;
+    -webkit-transition:all 0.5s ease-out;
+    display: block;
+}
+
+#oye:after{
+    content:"\25BC";
+    position:relative;
+    top: 12px;
+    font-size:14px;
+    color:#ea4c89;
+    /*position: absolute;
+    left: 95px;
+    width:80px;
+    height:80px;
+    z-index: 50;*/
+    /*content:"\25BC";
+    position:relative;
+    width: 400px;
+    height: 300px;
+    top:10px;
+    font-size:14px;
+    color:#ea4c89;*/
+}
+
+#myname:hover+#oye{
+    opacity:1;
+    z-index:10;
+    width:100px;
+    height:20px;
+    line-height: 20px;
+    /*background-color: yellow;*/
+}
+
+
+
+
+

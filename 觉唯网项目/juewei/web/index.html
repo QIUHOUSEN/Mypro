@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新首页</title>
+    <link type="text/css" rel="stylesheet" href="css/newIndex.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="topAndContent" id="topAndContent">-->
+    <div class="imagenav">
+        <div class="nav"><!--这是导航栏的那个最大的div-->
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="close"></span>
+            <img id="jueweilogo" src="images/jueweilogo.png">
+            <span id="users" class="fa fa-user"></span>
+
+            <div class="logo eights  items" id="0">
+                <img src="images/logo.png"/>
+            </div>
+            <div class="eights newEights  items" id="1">文章</div>
+            <div class="eights newEights  items" id="2">欣赏</div>
+            <div class="eights newEights  items" id="3">素材</div>
+            <div class="eights newEights  items" id="4">兑换</div>
+            <div class="eights newEights  items" id="5">活动</div>
+            <div class="eights newEights  items" id="6">灵感</div>
+            <div class="eights newEights" id="more">更多
+                <ul id="submenu">
+                    <li>关于觉唯</li>
+                    <li>留言联系</li>
+                </ul>
+            </div>
+
+            <div class="threedivs">
+                <div id="search">
+                    <span class="fa fa-search"></span><!--onfocus="true"-->
+                    <input  type="search" autofocus="autofocus" class="searchInput" placeholder="请输入关键词搜索..."/>
+                </div>
+                <div class="logandreg">
+                    <div class="forms" id="form1">登录</div>
+                    <div class="forms" id="form2">注册</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--这里设置成内容部分-->
+    <div id="content" class="clearfix">
+        <div class="rowone">
+            <span class="fa fa-bullhorn"> &nbsp;[03-22]用户中心正式上线</span>
+            <span>[12-11]新增个人主页展示，越看越有爱</span>
+            <span>[12-04]觉唯官网新版升级上线</span>
+            <span>[09-01]新增QQ一键登录</span>
+            <span>[08-12]觉唯商城Beta版测试上线</span>
+        </div>
+
+        <div class="container-fluid  allcontain">
+            <div class="row  rowTwo">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  slideContain">
+                    <div class="hiddenMore">
+                        <div class="langImgs" style="margin-left: -620px;">
+                            <img src="images/slide5.jpg"/><img src="images/slide1.png"/><img src="images/slide2.png"/><img src="images/slide3.jpg"/><img src="images/slide4.png"/><img src="images/slide5.jpg"/><img src="images/slide1.png"/>
+                        </div>
+                        <div class="switchIcons">
+                            <div class="switch-icons" index="1"></div>
+                            <div class="switch-icons" index="2"></div>
+                            <div class="switch-icons" index="3"></div>
+                            <div class="switch-icons" index="4"></div>
+                            <div class="switch-icons" index="5"></div>
+                        </div>
+                        <div class="preBtn"><span class="fa fa-angle-left"></span></div>
+                        <div class="nextBtn"><span class="fa fa-angle-right"></span></div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  slideRightOne">
+                    <div class="containImg">
+                        <img src="images/ads.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  slideRightTwo">
+                    <div class="containImg">
+                        <img src="images/p1.jpg" alt="">
+                    </div>
+                </div>
+            </div><!--第二行轮播图end-->
+
+            <!--这是第三行-->
+            <div class="row  rowThree">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one" id="one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1" id="imgdiv1">
+                            <div class="img-responsive  uptodown1" id="uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/1.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1">
+                            <div class="img-responsive  uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1">
+                            <div class="img-responsive  uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/3.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1">
+                            <div class="img-responsive  uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/4.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1">
+                            <div class="img-responsive  uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/4.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1">
+                            <div class="img-responsive  uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/3.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1">
+                            <div class="img-responsive  uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/2.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><!-- style="background-color: red"-->
+                    <div class="img-thumbnail  one"> <!--style="background-color: yellow"-->
+                        <div class="img-responsive  imgdiv1">
+                            <div class="img-responsive  uptodown1">
+                                <span class="fa fa-bookmark">3D艺术</span>
+                                <span>150<span class="fa fa-fire"></span></span>
+                            </div>
+                            <img src="images/enjoy/1.png" class="img-responsive" alt="">
+                        </div>
+                        <div class="caption captions">
+                            <p>diz-diz popcom凭拍设计</p>
+                            <span>1周前</span>
+                            <span class="fa fa-comment">7</span><span class="fa fa-heart">4&nbsp;&nbsp;</span>
+                        </div>
+                        <!--<div>
+                            <span>1周前</span>
+                        </div>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="goto">
+                        <div class="numbers" id="numbers1" >1</div>
+                        <div class="numbers">2</div>
+                        <div class="numbers">...</div>
+                        <div class="numbers">10</div>
+                        <div class="numbers"><span class="fa fa-chevron-right"></span></div>
+                        <div class="numbers"><span>共10页</span></div>
+                        <div class="enternumber">
+                            <input type="text" value="1"/>
+                            <div class="numbersgo">Go</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--这是第三行end-->
+
+            <!--这是第四行-->
+            <div class="row  fullpic">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s1.png" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s2.jpg" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s3.jpg" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s4.jpg" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s5.jpg" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s6.jpg" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s7.jpg" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6" style="padding: 0px">
+                    <div class="img-responsive  wrapImg">
+                        <img class="img-responsive" src="images/s8.jpg" alt="">
+                        <div class="layers  img-responsive">
+                            <div class="uplayer"><span class="fa fa-link"></span></div>
+                            <div class="downlayer">
+                                <p>我们曾在田野里歌唱</p>
+                                <span class="boxtimestamp">4小时前</span> <span class="boxcomments"> <span class="fa fa-heart"> 0</span> <span class="fa fa-eye"> 3</span> <span class="fa fa-comment"> 0</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mybtn">
+                        取悦于灵感 - Love Inspiration
+                        <span class="fa fa-chevron-circle-right"/>
+                    </div>
+                </div>
+
+            </div><!--这是第四行end-->
+
+
+            <!--这是第五行-->
+            <div class="row  fourRow">
+                <!--探索 用户 情感-->
+                <!--<div class="iconsrow">&lt;!&ndash;这是包括那三个圆圈的最大的一行div&ndash;&gt;-->
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  threeIcon"><!--这是包含第一个圆圈的div-->
+                    <div class="icon"><!--这是那个寻找图标-->
+                        <span class="fa fa-search"></span>
+                    </div>
+                    <h3>探索发现</h3>
+                    <p>探索创造性的思维，发现引领最新的设计潮流</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  threeIcon">
+                    <div class="icon">
+                        <span class="fa fa-user"></span>
+                    </div>
+                    <h3>用户设计</h3>
+                    <p>以用户为中心，以体验为至上，以细节为成败</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  threeIcon">
+                    <div class="icon">
+                        <span class="fa fa-paper-plane-o"></span>
+                    </div>
+                    <h3>情感传递</h3>
+                    <p>不只是图文信息，更多的是喜怒哀乐的情感</p>
+                </div>
+                <!--</div>--><!--Icons END-->
+            </div><!--这是第五行end-->
+
+
+            <!--这是第六行，即最后一行-->
+            <div class="row" style="padding: 0px">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0px">
+                    <div class="img-responsive  fourdiv">
+                        <img src="images/f1.jpg" class="img-responsive"/>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0px">
+                    <div class="img-responsive  fourdiv">
+                        <img src="images/f2.jpg" class="img-responsive"/>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0px">
+                    <div class="img-responsive  fourdiv">
+                        <img src="images/f3.jpg" class="img-responsive"/>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0px">
+                    <div class="img-responsive  fourdiv">
+                        <img src="images/f4.jpg" class="img-responsive"/>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div><!--内容content end-->
+    <!--</div>-->
+    <!--这是中间那个图像-->
+    <!--<div class="centerimg">
+        <img src="images/innerlogo.png"/>
+        <p>觉唯体验设计</p>
+        <p>jiawin experience design.</p>
+    </div>-->
+    <!--</div>--><!--高为250的那个含背景图片的div结束-->
+
+    <!--这是登录注册的面板界面-->
+    <div class="logreg" id="logreg">
+        <div class="login" id="login"><!--这是登录部分-->
+            <div class="closebtn">
+                <span class="fa fa-times"></span>
+            </div>
+            <div class="login-regin-switch" id="logtoreg">
+                <span class="fa fa-toggle-on" id="temp"></span>
+                <label for="temp">切换注册</label>
+            </div><h1>登录</h1>
+            <form action="" class="signform">
+                <span class="fa fa-user"></span>
+                <input type="text" id="logusername" placeholder=" 请输入用户名">
+                <span class="fa fa-lock"></span>
+                <input type="password" id="logpassword" placeholder=" 请输入密码">
+                <div class="checkboxa">
+                    <input type="checkbox" >请记住我的登录
+                    <a href="#"> 忘记密码？</a>
+                </div>
+                <input type="button" value="登录">
+            </form>
+            <hr/>
+            <div class="qqlogin">
+                <p>您也可以使用第三方账号登录</p>
+                <div class="qqloginlogo">
+                    <span class="fa fa-qq" ></span>
+                    QQ账号登录
+                </div>
+            </div>
+        </div>
+
+        <!--这是注册部分-->
+        <div class="regin" id="regin">
+            <!-- 关闭按钮-->
+            <div class="closebtn">
+                <span class="fa fa-times"></span>
+            </div>
+            <div class="login-regin-switch" id="regtolog">
+                <span class="fa fa-toggle-off" id="temp1" ></span>
+                <label for="temp1">切换登录</label>
+            </div>
+            <h1>注册</h1>
+            <form action="" class="signform signform1">
+                <span class="fa fa-user"></span>
+                <input type="text" id="regusername" placeholder=" 输入英文用户名">
+                <span id="envelope" class="fa fa-envelope"></span>
+                <input type="text" id="reguseraddr" placeholder=" 输入常用邮箱">
+                <span id="lockone" class="fa fa-lock"></span>
+                <input type="password" id="regpassword" placeholder=" 密码最小长度为6">
+                <span id="locktwo" class="fa fa-lock"></span>
+                <input type="password" id="regrepassword" placeholder=" 再次输入密码">
+                <input type="button" value="注册">
+            </form>
+            <hr/>
+            <div class="qqlogin qqlogin1">
+                <p>您也可以使用第三方账号登录</p>
+                <div class="qqloginlogo">
+                    <span class="fa fa-qq"></span>
+                    QQ账号登录
+                </div>
+            </div>
+        </div><!--注册end-->
+    </div><!--登录注册的大面板end-->
+
+    <!--这是覆盖整个屏幕的div-即当点击登录注册后，要一个覆盖面板盖住所有可点击区域-->
+    <div id="cover">
+    </div>
+
+    <!--这是滚动到顶部的那个小按钮-->
+    <div id="backtotop">
+        <span class="fa fa-angle-up"></span>
+    </div>
+
+
+
+
+    <!--此处是页脚，想把它抽象提取出来-->
+    <!-- Footer 页脚-->
+    <div class="footer" id="footer">
+        <div class="footer-left">
+            <h5>觉唯</h5>
+            <p>以用户为中心的设计理念，专注于用户体验设计，拥有国内外最新的设计潮流趋势、独
+                特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！<br/>
+                唯然是觉唯网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <div class="footer-col">
+            <h5>关于</h5>
+            <ul>
+                <li>关于觉唯</li>
+                <li>留言联系</li>
+                <li>友情链接</li>
+                <li>免责声明</li>
+                <li>网站地图</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>栏目</h5>
+            <ul>
+                <li>用户体验</li>
+                <li>素材下载</li>
+                <li>设计欣赏</li>
+                <li>主题商店</li>
+                <li>唯然灵感</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>友链</h5>
+            <ul>
+                <li>前端观察</li>
+                <li>设计达人</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>关注</h5>
+            <ul>
+                <li>Email: javin@jiawin.com</li>
+                <li>
+                    <input type="text" placeholder="请输入您的邮箱" /><input type="button" value="订阅"/>
+                </li>
+                <li class="footer-share">
+                    <span class="fa fa-weibo"></span><span class="fa fa-tencent-weibo"></span><span class="fa fa-qq"></span><span class="fa fa-rss"></span><span class="fa fa-weixin"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="footercopyright">
+            <p>Copyright © 2012-2015 觉唯 Theme by Javin All All Rights Reserved. 粤ICP备12073831号-1br</p>
+            <span id="myname">名字- 邱厚森</span>
+            <span id="oye">加油加油！666</span>
+        </div>
+    </div><!-- Footer End-->
+
+
+    <script type="text/javascript" src="jslib/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="jslib/newIndex.js"></script>
+    <script type="text/javascript" src="jslib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jslib/prefixfree.dynamic-dom.min.js"></script>
+    <script type="text/javascript" src="jslib/prefixfree.min.js"></script>
+    <!--<script type="text/javascript" src="jslib/temp.js"></script>-->
+</body>
+</html>

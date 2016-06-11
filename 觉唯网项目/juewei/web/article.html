@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>articl</title>
+    <link type="text/css" rel="stylesheet" href="css/article.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+</head>
+<body>
+<!--<div class="topAndContent" id="topAndContent">-->
+    <!--<div class="imagenav">-->
+        <div class="nav"><!--这是导航栏的那个最大的div-->
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="close"></span>
+            <img id="jueweilogo" src="images/jueweilogo.png">
+            <span id="users" class="fa fa-user"></span>
+
+            <div class="logo eights  items" id="0">
+                <img src="images/logo.png"/>
+            </div>
+            <div class="eights newEights  items" id="1">文章</div>
+            <div class="eights newEights  items" id="2">欣赏</div>
+            <div class="eights newEights  items" id="3">素材</div>
+            <div class="eights newEights  items" id="4">兑换</div>
+            <div class="eights newEights  items" id="5">活动</div>
+            <div class="eights newEights  items" id="6">灵感</div>
+            <div class="eights newEights" id="more">更多
+                <ul id="submenu">
+                    <li>关于觉唯</li>
+                    <li>留言联系</li>
+                </ul>
+            </div>
+
+            <div class="threedivs">
+                <div id="search">
+                    <span class="fa fa-search"></span>
+                    <input onfocus="true" class="searchInput" placeholder="请输入关键词搜索..." type="search"/>
+                </div>
+                <div class="logandreg">
+                    <div class="forms" id="form1">登录</div>
+                    <div class="forms" id="form2">注册</div>
+                </div>
+            </div>
+        </div>
+
+    <!--这里设置成内容部分-->
+    <div id="content" class="clearfix">
+        <div id="threeNav"><!--这是包含不限类别，最新发布，不限时间的最大的div-->
+            <ul id="BuXianLeiBie" class="ThreeUl"><!--不限内别-->
+                <li class="LisOne"><span class="fa fa-bookmark"></span>不限类别<span id="oned" class="fa fa-sort-down"></span></li>
+                <li>前端开发</li>
+                <li>用户研究</li>
+                <li>视觉设计</li>
+                <li>交互设计</li>
+            </ul>
+            <ul id="ZuiXin" class="ThreeUl"><!--最新发布-->
+                <li class="LisOne"><span class="fa fa-sort"></span>最新发布<span class="fa fa-sort-down"></span></li>
+                <li>喜欢最多</li>
+                <li>浏览最多</li>
+                <li>评论最多</li>
+            </ul>
+            <ul id="BuXianTime" class="ThreeUl"><!--不限时间-->
+                <li class="LisOne"><span class="fa fa-clock-o"></span>不限时间<span class="fa fa-sort-down"></span></li>
+                <li>一周内</li>
+                <li>一月内</li>
+                <li>一年内</li>
+            </ul>
+        </div>
+
+        <!--这是下面包含左右内容的最大ul(他们是一个弹性空间)-->
+        <ul id="bottomContenTwo">
+            <li><!--这是下面内容左边的部分-->
+                <div class="leftContent"><!--左边部分那个最大的div-->
+                    <div class="leftContenBox"><!--(第一行)这是左边部分内容的第一个div内容-->
+                        <img src="images/leftContent/1.png"/>
+                        <div class="leftContenBoxRight">
+                            <img src="images/leftContent/header1.jpg"/>
+                            <h4>AJAX实现跨域的三种方法</h4>
+                            <div>
+                                <span>前端开发ajax-javascript-跨域</span>
+                            </div>
+                            <div>
+                                <div class="text">于在工作中需要使用AJAX请求其他域名下的请求，但是会出现拒绝访问的情况，这是因为基于安全的考虑，AJAX只能访问本地的资源，而不能跨域访问。比如说你的网站域text-overflow:ellipsis;都说了放假开朗大方酒店客房简单归根结底雷锋精神快递费斯蒂芬斯蒂芬斯蒂芬答复大噶蛋糕蛋糕
+                                </div>
+                                <!--<div class="text-dotted">...</div>这里被省略的地方是另一种放，通过用margin的方式在后面手动添加省略号-->
+                            </div>
+                            <div>
+                                <span class="fa fa-calendar"></span> 番茄 发布于 2016-03-14
+                                <div>
+                                    <span class="fa fa-heart">11</span><span class="fa fa-fire">12</span>
+                                    <span class="fa fa-comment">7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--第一行end-->
+                    <div class="leftContenBox"><!--(第二行)这是左边部分内容的第一个div内容-->
+                        <img src="images/leftContent/2.png"/>
+                        <div class="leftContenBoxRight">
+                            <img src="images/leftContent/header2.jpg"/>
+                            <h4>常用的正则表达式(RegExp)</h4>
+                            <div>
+                                <span>前端开发 reg - 正则表达式 - 表单 - 验证 </span>
+                            </div>
+                            <div>
+                                <div class="text">基本且常用的元字符匹配除换行符以外的任意字符匹配字母或数字或下划线或汉匹配任意的空白符匹配数字匹配单词的开始或结束
+                                </div>
+                                <!--<div class="text-dotted">...</div>这里被省略的地方是另一种放，通过用margin的方式在后面手动添加省略号-->
+                            </div>
+                            <div>
+                                <span class="fa fa-calendar"></span> June 发布于 2016-03-02
+                                <div>
+                                    <span class="fa fa-heart">11</span><span class="fa fa-fire">12</span>
+                                    <span class="fa fa-comment">7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--第二行end-->
+                    <div class="leftContenBox"><!--(第三行)这是左边部分内容的第一个div内容-->
+                        <img src="images/leftContent/3.png"/>
+                        <div class="leftContenBoxRight">
+                            <img src="images/leftContent/header1.jpg"/>
+                            <h4>AJAX实现跨域的三种方法</h4>
+                            <div>
+                                <span>前端开发ajax-javascript-跨域</span>
+                            </div>
+                            <div>
+                                <div class="text">于在工作中需要使用AJAX请求其他域名下的请求，但是会出现拒绝访问的情况，这是因为基于安全的考虑，AJAX只能访问本地的资源，而不能跨域访问。比如说你的网站域text-overflow:ellipsis;都说了放假开朗大方酒店客房简单归根结底雷锋精神快递费斯蒂芬斯蒂芬斯蒂芬答复大噶蛋糕蛋糕
+                                </div>
+                                <!--<div class="text-dotted">...</div>这里被省略的地方是另一种放，通过用margin的方式在后面手动添加省略号-->
+                            </div>
+                            <div>
+                                <span class="fa fa-calendar"></span> 番茄 发布于 2016-03-14
+                                <div>
+                                    <span class="fa fa-heart">11</span><span class="fa fa-fire">12</span>
+                                    <span class="fa fa-comment">7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--第三行end-->
+                    <div class="leftContenBox"><!--(第四行)这是左边部分内容的第一个div内容-->
+                        <img src="images/leftContent/1.png"/>
+                        <div class="leftContenBoxRight">
+                            <img src="images/leftContent/header1.jpg"/>
+                            <h4>AJAX实现跨域的三种方法</h4>
+                            <div>
+                                <span>前端开发ajax-javascript-跨域</span>
+                            </div>
+                            <div>
+                                <div class="text">于在工作中需要使用AJAX请求其他域名下的请求，但是会出现拒绝访问的情况，这是因为基于安全的考虑，AJAX只能访问本地的资源，而不能跨域访问。比如说你的网站域text-overflow:ellipsis;都说了放假开朗大方酒店客房简单归根结底雷锋精神快递费斯蒂芬斯蒂芬斯蒂芬答复大噶蛋糕蛋糕
+                                </div>
+                                <!--<div class="text-dotted">...</div>这里被省略的地方是另一种放，通过用margin的方式在后面手动添加省略号-->
+                            </div>
+                            <div>
+                                <span class="fa fa-calendar"></span> 番茄 发布于 2016-03-14
+                                <div>
+                                    <span class="fa fa-heart">11</span><span class="fa fa-fire">12</span>
+                                    <span class="fa fa-comment">7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--第四行end-->
+                    <div class="leftContenBox"><!--(第五行)这是左边部分内容的第一个div内容-->
+                        <img src="images/leftContent/1.png"/>
+                        <div class="leftContenBoxRight">
+                            <img src="images/leftContent/header1.jpg"/>
+                            <h4>AJAX实现跨域的三种方法</h4>
+                            <div>
+                                <span>前端开发ajax-javascript-跨域</span>
+                            </div>
+                            <div>
+                                <div class="text">于在工作中需要使用AJAX请求其他域名下的请求，但是会出现拒绝访问的情况，这是因为基于安全的考虑，AJAX只能访问本地的资源，而不能跨域访问。比如说你的网站域text-overflow:ellipsis;都说了放假开朗大方酒店客房简单归根结底雷锋精神快递费斯蒂芬斯蒂芬斯蒂芬答复大噶蛋糕蛋糕
+                                </div>
+                                <!--<div class="text-dotted">...</div>这里被省略的地方是另一种放，通过用margin的方式在后面手动添加省略号-->
+                            </div>
+                            <div>
+                                <span class="fa fa-calendar"></span> 番茄 发布于 2016-03-14
+                                <div>
+                                    <span class="fa fa-heart">11</span><span class="fa fa-fire">12</span>
+                                    <span class="fa fa-comment">7</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--第五行end-->
+
+                </div><!--左边部分那个最大的div end-->
+
+                <div class="gotoPages"><!--这里是点击跳转到指定位置翻页的按钮-->
+                    <div class="numbers">1</div>
+                    <div class="numbers">2</div>
+                    <div class="numbers">...</div>
+                    <div class="numbers">10</div>
+                    <div class="numbers"><span class="fa fa-chevron-right"></span></div>
+                    <div class="numbers"><span>共10页</span></div>
+                    <div class="enternumber">
+                        <input type="text" value="1"/>
+                        <div class="numbersgo">Go</div>
+                    </div>
+                </div>
+            </li><!--ul下面的第一个li end-->
+
+
+            <li><!--这是下面内容右边的部分-->
+                <div class="rightContent"><!--右边部分那个最大的div-->
+                    <div id="firstDiv" class="firstDiv"><!--右边最大div的第一个div-->
+                        <div class="one" id="one">
+                            <span class="fa fa-file-archive-o">30天热门</span>
+                        </div>
+                        <div>
+                            <img src="images/rightContent/1.png"/>
+                            <span>风光摄影/在西南的云南</span>
+                            <span>0评论</span>
+                        </div>
+                        <div>
+                            <img src="images/rightContent/2.png"/>
+                            <span>3D卡通人物设计</span>
+                            <span>0评论</span>
+
+                        </div>
+                        <div>
+                            <img src="images/rightContent/1.png"/>
+                            <span>你好，海鸥</span>
+                            <span>0评论</span>
+                        </div>
+                        <div>
+                            <img src="images/rightContent/2.png"/>
+                            <span>阳光少年</span>
+                            <span>0评论</span>
+                        </div>
+                    </div><!--第一个内容div end-->
+
+                    <!--第二个大的内容div-->
+                    <div class="contains">
+                        <div id="second" class="second">
+                            <div><img src="images/rightContent/3.jpg"/></div>
+                            <div><img src="images/rightContent/3.jpg"/></div>
+                            <div><img src="images/rightContent/3.jpg"/></div>
+
+                            <div><img src="images/rightContent/4.jpg"/></div>
+                            <div><img src="images/rightContent/4.jpg"/></div>
+                            <div><img src="images/rightContent/4.jpg"/></div>
+
+                            <div><img src="images/rightContent/3.jpg"/></div>
+                            <div><img src="images/rightContent/3.jpg"/></div>
+                            <div><img src="images/rightContent/3.jpg"/></div>
+
+                            <div><img src="images/rightContent/4.jpg"/></div>
+                            <div><img src="images/rightContent/4.jpg"/></div>
+                            <div><img src="images/rightContent/4.jpg"/></div>
+
+                            <div><img src="images/rightContent/3.jpg"/></div>
+                            <div><img src="images/rightContent/3.jpg"/></div>
+                            <div><img src="images/rightContent/3.jpg"/></div>
+
+                            <div><img src="images/rightContent/4.jpg"/></div>
+                            <div><img src="images/rightContent/4.jpg"/></div>
+                            <div><img src="images/rightContent/4.jpg"/></div>
+                        </div>
+
+                        <div class="twoPoint">
+                            <div class="pointone"></div>
+                            <div class="pointtwo"></div>
+                        </div>
+
+
+                    </div><!--第二个大的内容div,这是剪切超出部分的那个div-->
+
+                </div><!--右边部分那个最大的div end-->
+
+            </li>
+        </ul>
+
+
+
+
+    </div><!--内容content end-->
+<!--</div>-->
+        <!--这是中间那个图像-->
+        <!--<div class="centerimg">
+            <img src="images/innerlogo.png"/>
+            <p>觉唯体验设计</p>
+            <p>jiawin experience design.</p>
+        </div>-->
+    <!--</div>--><!--高为250的那个含背景图片的div结束-->
+
+    <!--这是登录注册的面板界面-->
+    <div class="logreg" id="logreg">
+        <div class="login" id="login"><!--这是登录部分-->
+            <div class="closebtn">
+                <span class="fa fa-times"></span>
+            </div>
+            <div class="login-regin-switch" id="logtoreg">
+                <span class="fa fa-toggle-on" id="temp"></span>
+                <label for="temp">切换注册</label>
+            </div><h1>登录</h1>
+            <form action="" class="signform">
+                <span class="fa fa-user"></span>
+                <input type="text" id="logusername" placeholder=" 请输入用户名">
+                <span class="fa fa-lock"></span>
+                <input type="password" id="logpassword" placeholder=" 请输入密码">
+                <div class="checkboxa">
+                    <input type="checkbox" >请记住我的登录
+                    <a href="#"> 忘记密码？</a>
+                </div>
+                <input type="button" value="登录">
+            </form>
+            <hr/>
+            <div class="qqlogin">
+                <p>您也可以使用第三方账号登录</p>
+                <div class="qqloginlogo">
+                    <span class="fa fa-qq" ></span>
+                    QQ账号登录
+                </div>
+            </div>
+        </div>
+
+        <!--这是注册部分-->
+        <div class="regin" id="regin">
+            <!-- 关闭按钮-->
+            <div class="closebtn">
+                <span class="fa fa-times"></span>
+            </div>
+            <div class="login-regin-switch" id="regtolog">
+                <span class="fa fa-toggle-off" id="temp1" ></span>
+                <label for="temp1">切换登录</label>
+            </div>
+            <h1>注册</h1>
+            <form action="" class="signform signform1">
+                <span class="fa fa-user"></span>
+                <input type="text" id="regusername" placeholder=" 输入英文用户名">
+                <span id="envelope" class="fa fa-envelope"></span>
+                <input type="text" id="reguseraddr" placeholder=" 输入常用邮箱">
+                <span id="lockone" class="fa fa-lock"></span>
+                <input type="password" id="regpassword" placeholder=" 密码最小长度为6">
+                <span id="locktwo" class="fa fa-lock"></span>
+                <input type="password" id="regrepassword" placeholder=" 再次输入密码">
+                <input type="button" value="注册">
+            </form>
+            <hr/>
+            <div class="qqlogin qqlogin1">
+                <p>您也可以使用第三方账号登录</p>
+                <div class="qqloginlogo">
+                    <span class="fa fa-qq"></span>
+                    QQ账号登录
+                </div>
+            </div>
+        </div><!--注册end-->
+    </div><!--登录注册的大面板end-->
+
+    <!--这是覆盖整个屏幕的div-即当点击登录注册后，要一个覆盖面板盖住所有可点击区域-->
+    <div id="cover">
+    </div>
+
+    <!--这是滚动到顶部的那个小按钮-->
+    <div id="backtotop">
+        <span class="fa fa-angle-up"></span>
+    </div>
+
+
+
+
+    <!--此处是页脚，想把它抽象提取出来-->
+    <!-- Footer 页脚-->
+    <div class="footer" id="footer">
+        <div class="footer-left">
+            <h5>觉唯</h5>
+            <p>以用户为中心的设计理念，专注于用户体验设计，拥有国内外最新的设计潮流趋势、独
+                特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！<br/>
+                唯然是觉唯网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <div class="footer-col">
+            <h5>关于</h5>
+            <ul>
+                <li>关于觉唯</li>
+                <li>留言联系</li>
+                <li>友情链接</li>
+                <li>免责声明</li>
+                <li>网站地图</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>栏目</h5>
+            <ul>
+                <li>用户体验</li>
+                <li>素材下载</li>
+                <li>设计欣赏</li>
+                <li>主题商店</li>
+                <li>唯然灵感</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>友链</h5>
+            <ul>
+                <li>前端观察</li>
+                <li>设计达人</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>关注</h5>
+            <ul>
+                <li>Email: javin@jiawin.com</li>
+                <li>
+                    <input type="text" placeholder="请输入您的邮箱" /><input type="button" value="订阅"/>
+                </li>
+                <li class="footer-share">
+                    <span class="fa fa-weibo"></span><span class="fa fa-tencent-weibo"></span><span class="fa fa-qq"></span><span class="fa fa-rss"></span><span class="fa fa-weixin"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="footercopyright">
+            <p>Copyright © 2012-2015 觉唯 Theme by Javin All All Rights Reserved. 粤ICP备12073831号-1br</p>
+            <span id="myname">名字- 邱厚森</span>
+            <span id="oye">加油加油！666</span>
+        </div>
+    </div><!-- Footer End-->
+
+
+    <script type="text/javascript" src="jslib/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="jslib/article.js"></script>
+    <script type="text/javascript" src="jslib/prefixfree.dynamic-dom.min.js"></script>
+<script type="text/javascript" src="jslib/prefixfree.min.js"></script>
+    <!--<script type="text/javascript" src="jslib/temp.js"></script>-->
+</body>
+</html>

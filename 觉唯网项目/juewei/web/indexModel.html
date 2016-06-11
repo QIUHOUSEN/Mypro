@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model</title>
+    <link type="text/css" rel="stylesheet" href="css/indexModel.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+</head>
+<body>
+
+    <div class="imagenav">
+        <div class="nav"><!--这是导航栏的那个最大的div-->
+            <div class="logo">
+                <img src="images/logo.png"/>
+            </div>
+            <div>文章</div>
+            <div>欣赏</div>
+            <div>素材</div>
+            <div>兑换</div>
+            <div>活动</div>
+            <div>灵感</div>
+            <div id="more">更多
+                <ul id="submenu">
+                    <li>关于觉唯</li>
+                    <li>留言联系</li>
+                </ul>
+            </div>
+            <div id="search">
+                <span class="fa fa-search"></span>
+                <input class="searchInput" type="search"/>
+            </div>
+            <div class="logandreg">
+                <div class="forms" id="form1">登录</div>
+                <div class="forms" id="form2">注册</div>
+            </div>
+        </div>
+        <!--这是中间那个图像-->
+        <div class="centerimg">
+            <img src="images/innerlogo.png"/>
+            <p>觉唯体验设计</p>
+            <p>jiawin experience design.</p>
+        </div>
+    </div><!--高为250的那个含背景图片的div结束-->
+
+    <!--这里设置成内容部分-->
+    <div id="content" class="clearfix">
+        <div id="neirong"><!--这是包含不限类别，最新发布，不限时间的最大的div-->
+
+        </div>
+        <!--<div>&lt;!&ndash;这是左边最大的那个内容div&ndash;&gt;
+
+        </div>
+        <div>&lt;!&ndash;这是包含内容右边最大的那个div&ndash;&gt;
+
+        </div>-->
+    </div>
+
+
+    <!--这是登录注册的面板界面-->
+    <div class="logreg" id="logreg">
+        <div class="login" id="login"><!--这是登录部分-->
+            <div class="closebtn">
+                <span class="fa fa-times"></span>
+            </div>
+            <div class="login-regin-switch" id="logtoreg">
+                <span class="fa fa-toggle-on" id="temp"></span>
+                <label for="temp">切换注册</label>
+            </div><h1>登录</h1>
+            <form action="" class="signform">
+                <span class="fa fa-user"></span>
+                <input type="text" id="logusername" placeholder=" 请输入用户名">
+                <span class="fa fa-lock"></span>
+                <input type="password" id="logpassword" placeholder=" 请输入密码">
+                <div class="checkboxa">
+                    <input type="checkbox" >请记住我的登录
+                    <a href="#"> 忘记密码？</a>
+                </div>
+                <input type="button" value="登录">
+            </form>
+            <hr/>
+            <div class="qqlogin">
+                <p>您也可以使用第三方账号登录</p>
+                <div class="qqloginlogo">
+                    <span class="fa fa-qq" ></span>
+                    QQ账号登录
+                </div>
+            </div>
+        </div>
+
+        <!--这是注册部分-->
+        <div class="regin" id="regin">
+            <!-- 关闭按钮-->
+            <div class="closebtn">
+                <span class="fa fa-times"></span>
+            </div>
+            <div class="login-regin-switch" id="regtolog">
+                <span class="fa fa-toggle-off" id="temp1" ></span>
+                <label for="temp1">切换登录</label>
+            </div>
+            <h1>注册</h1>
+            <form action="" class="signform signform1">
+                <span class="fa fa-user"></span>
+                <input type="text" id="regusername" placeholder=" 输入英文用户名">
+                <span id="envelope" class="fa fa-envelope"></span>
+                <input type="text" id="reguseraddr" placeholder=" 输入常用邮箱">
+                <span id="lockone" class="fa fa-lock"></span>
+                <input type="password" id="regpassword" placeholder=" 密码最小长度为6">
+                <span id="locktwo" class="fa fa-lock"></span>
+                <input type="password" id="regrepassword" placeholder=" 再次输入密码">
+                <input type="button" value="注册">
+            </form>
+            <hr/>
+            <div class="qqlogin qqlogin1">
+                <p>您也可以使用第三方账号登录</p>
+                <div class="qqloginlogo">
+                    <span class="fa fa-qq"></span>
+                    QQ账号登录
+                </div>
+            </div>
+        </div><!--注册end-->
+    </div><!--登录注册的大面板end-->
+
+    <!--这是覆盖整个屏幕的div-即当点击登录注册后，要一个覆盖面板盖住所有可点击区域-->
+    <div id="cover">
+    </div>
+
+    <!--这是滚动到顶部的那个小按钮-->
+    <div id="backtotop">
+        <span class="fa fa-angle-up"></span>
+    </div>
+
+    <!--这里设置成内容部分
+    <div id="content">
+
+    </div>-->
+
+
+    <!--此处是页脚，想把它抽象提取出来-->
+    <!-- Footer 页脚-->
+    <div class="footer">
+        <div class="footer-left">
+            <h5>觉唯</h5>
+            <p>以用户为中心的设计理念，专注于用户体验设计，拥有国内外最新的设计潮流趋势、独
+                特而美的创意视觉、新颖而灵敏的思维意识、极致而生动的交互体验，更有严谨而通俗的技术教程！<br/>
+                唯然是觉唯网的图片分享社区，以记录美丽、分享美好的创意理念，分享高品质创意、艺术、设计、时尚、插画、摄影、唯美类精美图片。</p>
+        </div>
+        <div class="footer-col">
+            <h5>关于</h5>
+            <ul>
+                <li>关于觉唯</li>
+                <li>留言联系</li>
+                <li>友情链接</li>
+                <li>免责声明</li>
+                <li>网站地图</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>栏目</h5>
+            <ul>
+                <li>用户体验</li>
+                <li>素材下载</li>
+                <li>设计欣赏</li>
+                <li>主题商店</li>
+                <li>唯然灵感</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>友链</h5>
+            <ul>
+                <li>前端观察</li>
+                <li>设计达人</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>关注</h5>
+            <ul>
+                <li>Email: javin@jiawin.com</li>
+                <li>
+                    <input type="text" placeholder="请输入您的邮箱" /><input type="button" value="订阅"/>
+                </li>
+                <li class="footer-share">
+                    <span class="fa fa-weibo"></span><span class="fa fa-tencent-weibo"></span><span class="fa fa-qq"></span><span class="fa fa-rss"></span><span class="fa fa-weixin"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="footercopyright">
+            <p>Copyright © 2012-2015 觉唯 Theme by Javin All All Rights Reserved. 粤ICP备12073831号-1br</p>
+            <span id="myname">名字- 邱厚森</span>
+            <span id="oye">加油加油！666</span>
+        </div>
+    </div><!-- Footer End-->
+
+
+    <script type="text/javascript" src="jslib/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="jslib/indexModel.js"></script>
+    <!--<script type="text/javascript" src="jslib/temp.js"></script>-->
+</body>
+</html>
